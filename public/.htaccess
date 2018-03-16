@@ -1,0 +1,40 @@
+Options +FollowSymlinks
+#Options +SymLinksIfOwnerMatch
+Options -Indexes
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	#RewriteCond %{REQUEST_FILENAME} -f
+	#RewriteRule ^(controllers/|modules/|views/|vendor/|settings\.json|composer\.*|index\.php) - [F,L,NC]
+
+	# APIne Rules
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^api/((.+))?$ /?request=/$1&api=api [QSA,L]
+	
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^([a-zA-Z]{2}(-[a-zA-Z]{2})?)(/(.+)?)?$ /?request=$3&language=$1 [QSA,L]
+	
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^(.*)$ /?request=/$1 [QSA,L]
+	
+	#RewriteCond %{REQUEST_FILENAME} !-f
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^()?$ /?request=/home [QSA,L]
+
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^(controllers/|modules/|views/|vendor/|settings\.json|composer\.*) - [F,L,NC]
+
+	#RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^((([a-zA-Z]{2}(-[a-zA-Z]{2})?)\/)?)([\s\S]*)$ /vendor/youmy001/apine-framework/index.php?apine-request=/$5&apine-language=$3 [QSA,END]
+
+    RewriteRule ^([\s\S]*)$ index.php?apine-request=/$1 [QSA,END]
+
+    #RewriteRule ^(.*)$ /vendor/youmy001/apine-framework/index.php?apine-request=/ [QSA,END]
+
+
+</IfModule>
