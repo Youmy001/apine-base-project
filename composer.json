@@ -1,5 +1,15 @@
 {
+	"type": "project",
+	"name": "youmy001/apine-base-project",
+	"authors": [
+		{
+			"name": "Tommy Teasdale",
+			"email": "tteasdaleroads@gmail.com"
+		}
+	],
     "require": {
-        "youmy001/apine-framework": "2.0.x-dev"
-    }
+        "youmy001/apine-framework": "2.0.x-dev",
+		"twbs/bootstrap": "^4.0"
+    },
+	"license": "MIT"
 }
