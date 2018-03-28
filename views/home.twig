@@ -1,5 +1,13 @@
 {% extends "layout.twig" %}
 {% block title %}{{ title }}{% endblock %}
+{% block menuitems %}
+    <li class="nav-item active">
+        <a class="nav-link" href="{{ path("") }}">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path("about") }}">About</a>
+    </li>
+{% endblock %}
 {% block content %}
     <div class="container-fluid">
         <div class="row">

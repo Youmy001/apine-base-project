@@ -30,6 +30,8 @@ class HomeController extends Controller
     
     function about() : View
     {
-        return new HTMLView('about');
+        return new HTMLView('about', [
+            'title' => 'About'
+        ]);
     }
 }
