@@ -1,0 +1,14 @@
+{
+	"\/": {
+		"GET": {
+			"controller": "Apine\\Controllers\\HomeController",
+			"action": "index"
+		}
+	},
+	"\/about": {
+		"GET": {
+			"controller": "Apine\\Controllers\\HomeController",
+			"action": "about"
+		}
+	}
+}

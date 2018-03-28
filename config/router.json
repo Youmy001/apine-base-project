@@ -1,0 +1,6 @@
+{
+    "serve": {
+        "api": false,
+        "web": true
+    }
+}

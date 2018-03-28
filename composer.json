@@ -1,6 +1,7 @@
 {
 	"type": "project",
 	"name": "youmy001/apine-base-project",
+	"description": "A small example application built with the APIne framework",
 	"authors": [
 		{
 			"name": "Tommy Teasdale",

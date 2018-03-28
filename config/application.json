@@ -1,0 +1,8 @@
+{
+	"title": "Project Name",
+	"authors": [
+		"Author"
+	],
+	"description": "A small example application built with the APIne framework.",
+	"version": "2.0.0"
+}
