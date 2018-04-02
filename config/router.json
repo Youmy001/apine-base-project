@@ -2,5 +2,9 @@
     "serve": {
         "api": false,
         "web": true
+    },
+    "prefixes": {
+        "api": "api",
+        "web": ""
     }
 }
