@@ -1,0 +1,6 @@
+{
+    "extensions": [
+        "Apine\\Core\\Views\\Twig\\UriExtension",
+        "Apine\\Core\\Views\\Twig\\ExecutionTimeExtension"
+    ]
+}

@@ -23,14 +23,14 @@ class HomeController extends Controller
 {
     function index() : View
     {
-        return new HTMLView('home', [
+        return new HTMLView('views/home', [
             'title' => 'Home page'
         ]);
     }
     
     function about() : View
     {
-        return new HTMLView('about', [
+        return new HTMLView('views/about', [
             'title' => 'About'
         ]);
     }
